@@ -35,7 +35,7 @@ for input_path in csv_files:
 
     # ROW REMOVAL
     # Only 3D facial landmarks are left (millimeters)
-    remove_prefixes = ('gaze', 'eye_lmk', 'AU', 'MP', 'left_hand', 'right_hand', 'x', 'y', 'pose')
+    remove_prefixes = ('gaze', 'eye_lmk', 'AU', 'MP', 'left_hand', 'right_hand', 'x', 'y', 'pose', 'face', 'confidence', 'success')
     
     to_remove = []
     for col in df_cleaned.columns:
